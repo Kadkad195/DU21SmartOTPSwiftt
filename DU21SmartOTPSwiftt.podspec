@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DU21SmartOTPSwiftt'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Easy to implement SmartOTP into your project'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DU21SmartOTPSwiftt/Classes/**/*'
+  s.source_files = 'DU21SmartOTPSwiftt/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'DU21SmartOTPSwiftt' => ['DU21SmartOTPSwiftt/Assets/*.png']

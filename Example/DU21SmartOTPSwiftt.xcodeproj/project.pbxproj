@@ -14,6 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		954E0AFA053A2CA74947E57A /* Pods_DU21SmartOTPSwiftt_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC398D1034821A38F0F114F /* Pods_DU21SmartOTPSwiftt_Tests.framework */; };
+		BBF16F4D26B6D8FF00D50DE3 /* HashUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF16F4C26B6D8FF00D50DE3 /* HashUtil.swift */; };
+		BBF16F5126B6D9B000D50DE3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF16F5026B6D9B000D50DE3 /* Test.swift */; };
 		C84E70F6D96E9C6ACA68A473 /* Pods_DU21SmartOTPSwiftt_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFBF6B9B6648F37A5C2B609 /* Pods_DU21SmartOTPSwiftt_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		6CC398D1034821A38F0F114F /* Pods_DU21SmartOTPSwiftt_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DU21SmartOTPSwiftt_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B40B4091BEFF40BC149CF14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B4B1B6E5AC4C1905E39FAD0B /* Pods-DU21SmartOTPSwiftt_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DU21SmartOTPSwiftt_Example.debug.xcconfig"; path = "Target Support Files/Pods-DU21SmartOTPSwiftt_Example/Pods-DU21SmartOTPSwiftt_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF16F4C26B6D8FF00D50DE3 /* HashUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashUtil.swift; sourceTree = "<group>"; };
+		BBF16F5026B6D9B000D50DE3 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		BE1307A160FF3218165D763A /* Pods-DU21SmartOTPSwiftt_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DU21SmartOTPSwiftt_Tests.release.xcconfig"; path = "Target Support Files/Pods-DU21SmartOTPSwiftt_Tests/Pods-DU21SmartOTPSwiftt_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E17E716C62339931BE74AF19 /* Pods-DU21SmartOTPSwiftt_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DU21SmartOTPSwiftt_Example.release.xcconfig"; path = "Target Support Files/Pods-DU21SmartOTPSwiftt_Example/Pods-DU21SmartOTPSwiftt_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,8 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				BBF16F5026B6D9B000D50DE3 /* Test.swift */,
+				BBF16F4C26B6D8FF00D50DE3 /* HashUtil.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for DU21SmartOTPSwiftt */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -352,6 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF16F4D26B6D8FF00D50DE3 /* HashUtil.swift in Sources */,
+				BBF16F5126B6D9B000D50DE3 /* Test.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
