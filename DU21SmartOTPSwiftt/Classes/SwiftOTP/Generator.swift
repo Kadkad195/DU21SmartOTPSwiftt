@@ -61,11 +61,23 @@ internal class Generator {
 
 		switch algorithm {
 		case .sha1:
-			hmac = Data(HMAC<Insecure.SHA1>.authenticationCode(for: counterMessage, using: SymmetricKey.init(data: secret)))
+            if #available(iOS 13.0, *) {
+                hmac = Data(HMAC<Insecure.SHA1>.authenticationCode(for: counterMessage, using: SymmetricKey.init(data: secret)))
+            } else {
+                // Fallback on earlier versions
+            }
 		case .sha256:
-			hmac = Data(HMAC<SHA256>.authenticationCode(for: counterMessage, using: SymmetricKey.init(data: secret)))
+            if #available(iOS 13.0, *) {
+                hmac = Data(HMAC<SHA256>.authenticationCode(for: counterMessage, using: SymmetricKey.init(data: secret)))
+            } else {
+                // Fallback on earlier versions
+            }
 		case .sha512:
-			hmac = Data(HMAC<SHA512>.authenticationCode(for: counterMessage, using: SymmetricKey.init(data: secret)))
+            if #available(iOS 13.0, *) {
+                hmac = Data(HMAC<SHA512>.authenticationCode(for: counterMessage, using: SymmetricKey.init(data: secret)))
+            } else {
+                // Fallback on earlier versions
+            }
 		}
 
 		

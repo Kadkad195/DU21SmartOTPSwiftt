@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DU21SmartOTPSwiftt/Classes/*.{h,m,swift}'
+  s.source_files = 'DU21SmartOTPSwiftt/Classes/*.{h,m,swift}', 'DU21SmartOTPSwiftt/Classes/SwiftOTP/*.{h,m,swift}', 'DU21SmartOTPSwiftt/Classes/SwiftOTP/Base32/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'DU21SmartOTPSwiftt' => ['DU21SmartOTPSwiftt/Assets/*.png']
