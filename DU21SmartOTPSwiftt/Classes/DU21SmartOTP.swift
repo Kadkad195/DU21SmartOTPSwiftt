@@ -45,7 +45,7 @@ public class DU21SmartOTP {
         let shareKey = createShareKey(input: mInput)
         TimeUtil().getTime { [self] (ntpTime) in
             let counter = ntpTime / period
-            let totp = TOTP(secret: shareKey.dataUsingUTF8StringEncoding, digits: digit, timeInterval: counter, algorithm: .sha256)
+            let totp = TOTP(secret: shareKey.dataUsingUTF8StringEncoding, digits: digit, timeInterval: period / 1000, algorithm: .sha256)
             mCurrentOTP = totp?.generate(secondsPast1970: ntpTime) ?? "000000"
             
             //Calculate time left
@@ -54,28 +54,29 @@ public class DU21SmartOTP {
             mCurrentTimeLeft = timePeriodLimitMilisecond - ntpTime
             
             mGenerateTime = mGenerateTime + 1
-            countDownOtp()
+            
+            DispatchQueue.main.sync {
+                countDownOtp()
+            }
         }
     }
     
     private func countDownOtp() {
         mCounter = mCurrentTimeLeft / 1000
+        mTimer?.invalidate()
         mTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
     }
     
     @objc private func countDown() {
         if mCounter > 0 {
             mCounter = mCounter - 1
-            DispatchQueue.main.sync {
-                listenerOTP?(mCurrentOTP, mCounter)
-            }
+            listenerOTP?(mCurrentOTP, mCounter)
         } else {
             if mGenerateTime < maxGenerateTime {
                 getTOTP()
             } else {
-                DispatchQueue.main.sync {
-                    listenerOTPExpired?()
-                }
+                mTimer?.invalidate()
+                listenerOTPExpired?()
             }
         }
     }
