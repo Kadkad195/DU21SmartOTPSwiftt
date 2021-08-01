@@ -1,12 +1,12 @@
 import Foundation
 
-class TimeUtil {
+public class TimeUtil {
     
-    init() {
+    public init() {
         
     }
     
-    func getTime(_ callback: @escaping (_ time: Int) -> Void) {
+    public func getTime(_ callback: @escaping (_ time: Int) -> Void) {
         var request = URLRequest(url: URL(string: "http://date.jsontest.com")!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
@@ -22,6 +22,6 @@ class TimeUtil {
     
 }
 
-class TimeEntity: Codable {
+public class TimeEntity: Codable {
     var milliseconds_since_epoch: Int = 0
 }

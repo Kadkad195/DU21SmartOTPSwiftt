@@ -11,19 +11,19 @@ public class DU21SmartOTP {
                 maxGenerateTime: Int = 2) {
         
     }
-    var listenerOTP: ((_ otpValue: String, _ secondLeft: Int) -> Void)? = nil
-    var listenerOTPExpired: (() -> Void)? = nil
+    public var listenerOTP: ((_ otpValue: String, _ secondLeft: Int) -> Void)? = nil
+    public var listenerOTPExpired: (() -> Void)? = nil
     
-    func clear() {
+    public func clear() {
         mInput = ""
         mTimer?.invalidate()
     }
     
-    func createShareKey(input: String) -> String {
+    public func createShareKey(input: String) -> String {
         return input.sha256()
     }
     
-    func createTOTP(input: String) {
+    public func createTOTP(input: String) {
         mGenerateTime = 0
         mInput = input
 //        getTOTP()
