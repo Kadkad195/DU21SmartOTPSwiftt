@@ -38,7 +38,7 @@ public class DU21SmartOTP {
     public func createTOTP(input: String) {
         mGenerateTime = 0
         mInput = input
-//        getTOTP()
+        getTOTP()
     }
     
     private func getTOTP() {
