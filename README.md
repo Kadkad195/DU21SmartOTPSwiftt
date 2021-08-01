@@ -36,10 +36,10 @@ Easy implement Smart OTP into you projects.
 *  @param digit: length of otp value. Default 6
 *  @param generateTime: how many otp will be generated. Default 2
 ```
-val smartOTP = DU21SmartOTP(period, digit, generateTime)
+let smartOTP = DU21SmartOTP(period, digit, generateTime)
 ```
 ```
-val shareKey = smartOTP.createShareKey("YOUR_SECRET") //Should be your PIN code + your device id
+let shareKey = smartOTP.createShareKey("YOUR_SECRET") //Should be your PIN code + your device id
 ```
 Then send this secret to server to register. Your server will use this secret to generate OTP too
 
