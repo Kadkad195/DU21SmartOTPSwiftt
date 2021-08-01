@@ -96,8 +96,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				BBF16F5026B6D9B000D50DE3 /* Test.swift */,
-				BBF16F4C26B6D8FF00D50DE3 /* HashUtil.swift */,
+				BBF16F5426B6DA8E00D50DE3 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for DU21SmartOTPSwiftt */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -163,6 +162,15 @@
 				7B40B4091BEFF40BC149CF14 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		BBF16F5426B6DA8E00D50DE3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BBF16F5026B6D9B000D50DE3 /* Test.swift */,
+				BBF16F4C26B6D8FF00D50DE3 /* HashUtil.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
