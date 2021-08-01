@@ -1,5 +1,5 @@
 PODS:
-  - DU21SmartOTPSwiftt (0.1.2)
+  - DU21SmartOTPSwiftt (0.1.3)
   - Nimble (8.0.9)
   - Quick (2.2.1)
 
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DU21SmartOTPSwiftt: 20c62fb43d441904ac9d6fee25b64fd132245914
+  DU21SmartOTPSwiftt: 58542cb0d03a8aa15a32de14b57c4f3a5b5f708d
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
 
