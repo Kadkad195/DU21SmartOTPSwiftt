@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18834AC6FFEF4A6394BF99E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1CCAB9699F0CF381F215C488 /* DU21SmartOTPSwiftt.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DU21SmartOTPSwiftt.podspec; path = ../DU21SmartOTPSwiftt.podspec; sourceTree = "<group>"; };
+		18834AC6FFEF4A6394BF99E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1CCAB9699F0CF381F215C488 /* DU21SmartOTPSwiftt.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DU21SmartOTPSwiftt.podspec; path = ../DU21SmartOTPSwiftt.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2CFBF6B9B6648F37A5C2B609 /* Pods_DU21SmartOTPSwiftt_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DU21SmartOTPSwiftt_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		328FF5AB39C5BECDA900C656 /* Pods-DU21SmartOTPSwiftt_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DU21SmartOTPSwiftt_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DU21SmartOTPSwiftt_Tests/Pods-DU21SmartOTPSwiftt_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DU21SmartOTPSwiftt_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DU21SmartOTPSwiftt_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +43,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6CC398D1034821A38F0F114F /* Pods_DU21SmartOTPSwiftt_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DU21SmartOTPSwiftt_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B40B4091BEFF40BC149CF14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7B40B4091BEFF40BC149CF14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B4B1B6E5AC4C1905E39FAD0B /* Pods-DU21SmartOTPSwiftt_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DU21SmartOTPSwiftt_Example.debug.xcconfig"; path = "Target Support Files/Pods-DU21SmartOTPSwiftt_Example/Pods-DU21SmartOTPSwiftt_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BE1307A160FF3218165D763A /* Pods-DU21SmartOTPSwiftt_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DU21SmartOTPSwiftt_Tests.release.xcconfig"; path = "Target Support Files/Pods-DU21SmartOTPSwiftt_Tests/Pods-DU21SmartOTPSwiftt_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E17E716C62339931BE74AF19 /* Pods-DU21SmartOTPSwiftt_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DU21SmartOTPSwiftt_Example.release.xcconfig"; path = "Target Support Files/Pods-DU21SmartOTPSwiftt_Example/Pods-DU21SmartOTPSwiftt_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 				328FF5AB39C5BECDA900C656 /* Pods-DU21SmartOTPSwiftt_Tests.debug.xcconfig */,
 				BE1307A160FF3218165D763A /* Pods-DU21SmartOTPSwiftt_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
