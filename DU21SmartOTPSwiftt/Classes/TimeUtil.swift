@@ -6,7 +6,7 @@ class TimeUtil {
         
     }
     
-    func getTime(_ callback: (_ time: Int) -> Void) {
+    func getTime(_ callback: @escaping (_ time: Int) -> Void) {
         var request = URLRequest(url: URL(string: "http://date.jsontest.com")!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
